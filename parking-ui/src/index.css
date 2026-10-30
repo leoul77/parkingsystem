@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+input, select, button { 
+  font-family: inherit; 
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  background: white; 
+}
+
+th, td { 
+  padding: 12px; 
+  text-align: left; 
+  border-bottom: 1px solid #ddd; 
+}
+
+th { 
+  background: #f8fafc; 
+  font-weight: 600; 
+}
+
+/* =========================================
+   NEW MODERN HOVER EFFECTS
+   ========================================= */
+
+/* Smooth transition for buttons and cards */
+.hover-pop {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* The pop effect */
+.hover-pop:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -5px rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer;
+}
+
+/* Slightly stronger shadow for the cards before hovering, so they look 3D */
+.modern-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
